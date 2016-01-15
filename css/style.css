@@ -127,7 +127,7 @@ img {
 
 .loginPage {
   margin-top: 20vh;
-  background: transparent;
+  background: rgba(244,244,244, 0.7);
   border: none; }
 
 .ratingInput {
@@ -195,6 +195,11 @@ button > span {
   .nav .badge {
     position: absolute;
     right: -5px; } }
+    @media(max-height: 360px){
+      .loginPage {
+        margin-top: 5vh;
+      }
+    }
 @media (min-width: 680px) {
   .nav .badge {
     position: absolute;
