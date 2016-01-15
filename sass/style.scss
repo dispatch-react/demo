@@ -1,3 +1,16 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+#app {
+  height: 100%;
+}
+.loginScreen{
+  background: url('../img/login.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
 $nav-clr: #160A20;
 
 #viewContent {
@@ -50,6 +63,7 @@ img {
   bottom: 0;
   width: 80vw;
   margin-left: 10vw;
+  z-index: 4;
   span {
     display: block;
   }
@@ -110,6 +124,8 @@ img {
 
 .loginPage {
   margin-top: 20vh;
+  background: transparent;
+  border: none;
 }
 
 .ratingInput {
@@ -124,6 +140,10 @@ button > span {
 #msgInfo {
   margin-left: 5px;
 }
+#msgAuthor {
+  float: right;
+}
+
 #msgAuthor {
   float: right;
 }
@@ -258,5 +278,5 @@ button > span {
 .logOutBtn {
   width: 100%;
   position: absolute;
-  top: 600px;
+  top: 400px;
 }
