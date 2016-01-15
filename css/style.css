@@ -1,7 +1,5 @@
 #viewContent {
-  height: 68vh;
-  padding-top: 0.5em;
-  padding-bottom: 0.1em;
+  height: 100vh;
   overflow: auto; }
 
 body {
@@ -19,7 +17,8 @@ img {
 
 #nav-icon {
   min-width: 70px;
-  max-width: 100px; }
+  max-width: 100px;
+  -webkit-filter: saturate(0) contrast(200%); }
 
 #userInfo {
   float: right; }
@@ -32,18 +31,32 @@ img {
   margin: 5px; }
 
 .nav {
-  font-size: 16pt;
-  height: 22vh;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  font-size: 14pt;
+  margin-top: 6vh;
+  height: 115px;
   position: fixed;
-  bottom: -40px;
+  bottom: 0;
   width: 80vw;
   margin-left: 10vw; }
   .nav span {
     display: block; }
   .nav > li > a:focus, .nav > li > a:hover {
     background-color: transparent; }
-  .nav > li {
-    margin: 20px; }
+  .nav > li:first-child {
+    margin-left: 10px; }
+  .nav .navIcons {
+    color: #222; }
+  .nav .iconText {
+    background: rgba(244, 244, 244, 0.9);
+    border-radius: 10px;
+    margin-top: 9px; }
+  .nav .badge {
+    background: red;
+    text-shadow: none;
+    position: absolute;
+    right: 35px; }
 
 /* Float */
 .hvr-float {
@@ -86,6 +99,9 @@ button > span {
 #msgInfo {
   margin-left: 5px; }
 
+#msgAuthor {
+  float: right; }
+
 #msgAuthor:hover {
   cursor: pointer; }
 
@@ -118,11 +134,40 @@ button > span {
   #nav-icon {
     min-width: 20px;
     max-width: 50px;
-    padding-bottom: 20px; } }
+    padding-bottom: 10px; } }
 @media (min-width: 0px) {
   .nav-justified > li {
     display: table-cell;
     width: 1%; } }
+@media (min-width: 320px) {
+  .nav {
+    padding-top: 1em;
+    width: 100vw;
+    margin-left: 0; }
+    .nav .badge {
+      position: absolute;
+      right: -12px;
+      top: -4px; } }
+@media (min-width: 480px) {
+  .nav .badge {
+    position: absolute;
+    right: -5px; } }
+@media (min-width: 680px) {
+  .nav .badge {
+    position: absolute;
+    right: 5px; } }
+@media (min-width: 760px) {
+  .nav {
+    padding-top: 0; }
+    .nav .badge {
+      position: absolute;
+      right: 35px;
+      top: 5px; } }
+@media (min-width: 980px) {
+  .nav .badge {
+    position: absolute;
+    right: 35px;
+    top: 5px; } }
 .pac-container {
   z-index: 999999; }
 
@@ -148,5 +193,10 @@ button > span {
   text-align: center;
   top: -100%;
   padding: 2px 3px; }
+
+.logOutBtn {
+  width: 100%;
+  position: absolute;
+  top: 600px; }
 
 /*# sourceMappingURL=style.css.map */
