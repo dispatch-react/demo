@@ -27,12 +27,12 @@ html, body {
   -webkit-animation-duration: 23s; }
 
 .loginScreen {
-  background: url("../img/backgroundLogIn.jpg") no-repeat center center fixed;
+  background: url("../img/backgroundLogIn.jpg") no-repeat center center;
   background-size: cover;
   height: 100%;
   width: 100%; }
 
-input {
+.autocomplete {
   width: 100%; }
 
 #viewContent {
