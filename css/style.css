@@ -27,15 +27,15 @@ html, body {
   -webkit-animation-duration: 23s; }
 
 .loginScreen {
-  background: url("../img/backgroundLogIn.jpg") no-repeat center center;
+  background: url("../img/backgroundLogIn.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   width: 100%; }
 
-.autocomplete {
+input {
   width: 100%; }
 
-#viewContent {
+#viewContent, #mapViewContent {
   height: 100vh;
   overflow: auto; }
 
@@ -52,6 +52,9 @@ a {
 img {
   max-width: 100%; }
 
+#demoModal img {
+  max-width: 1000px; }
+
 #nav-icon {
   min-width: 70px;
   max-width: 100px;
@@ -65,7 +68,7 @@ img {
 
 #updatePhoto {
   text-align: center;
-  margin: 5px; }
+  padding: 5px; }
 
 .nav {
   background: rgba(255, 255, 255, 0.6);
@@ -127,7 +130,7 @@ img {
 
 .loginPage {
   margin-top: 20vh;
-  background: rgba(244,244,244, 0.7);
+  background: transparent;
   border: none; }
 
 .ratingInput {
@@ -195,11 +198,6 @@ button > span {
   .nav .badge {
     position: absolute;
     right: -5px; } }
-    @media(max-height: 360px){
-      .loginPage {
-        margin-top: 5vh;
-      }
-    }
 @media (min-width: 680px) {
   .nav .badge {
     position: absolute;
@@ -210,7 +208,10 @@ button > span {
     .nav .badge {
       position: absolute;
       right: 35px;
-      top: 5px; } }
+      top: 5px; }
+
+  #viewContent {
+    margin: 5vh 15vw 0 15vw; } }
 @media (min-width: 980px) {
   .nav .badge {
     position: absolute;
@@ -243,8 +244,9 @@ button > span {
   padding: 2px 3px; }
 
 .logOutBtn {
-  width: 100%;
-  position: absolute;
-  top: 400px; }
+  width: 200px;
+  margin: auto;
+  display: block;
+  margin-top: 20vh; }
 
 /*# sourceMappingURL=style.css.map */
